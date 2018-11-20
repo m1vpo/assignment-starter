@@ -73,7 +73,7 @@ def main(argv):
       elif opt in ("-o", "--ofile"):
          outputfile = arg
       elif opt in ("-g", "--gamma"):
-         gamma = arg
+         gamma = float(arg)
 
    Power_Transform(inputfile, outputfile, gamma = gamma)
 
