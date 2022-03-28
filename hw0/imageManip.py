@@ -54,9 +54,7 @@ def dim_image(image):
 def convert_to_grey_scale(image):
     """Change image to gray scale.
 
-    HINT: Look at `skimage.color` library to see if there is a function
-    there you can use.
-
+    HINT: see if you can use  the opencv function `cv2.cvtColor()` 
     Args:
         image: numpy array of shape(image_height, image_width, 3).
 
@@ -103,7 +101,6 @@ def lab_decomposition(image, channel):
         out: numpy array of shape(image_height, image_width).
     """
 
-    lab = cv2.cvtColor(image, cv2.COLOR_RGB2Lab)
     out = None
 
     ### VOTRE CODE ICI - DEBUT
@@ -123,9 +120,6 @@ def hsv_decomposition(image, channel='H'):
     Returns:
         out: numpy array of shape(image_height, image_width).
     """
-
-    hsv = cv2.cvtColor(image, cv2.COLOR_RGB2HSV)
-
     out = None
 
     ### VOTRE CODE ICI - DEBUT
